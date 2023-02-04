@@ -1,0 +1,32 @@
+on:
+  workflow_dispatch:
+  push:
+  # for now, CRON jobs only run on the default branch of the repo (i.e. usually on master)
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron: "0 7 * * 1"
+    
+jobs:
+  push-rss-file:
+    name: "Scrape website and push rss feed."
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        token: ${{secrets.GITHUB_TOKEN}}
+    - uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
+    - name: Install dependencies
+      run: pip3 install -user requests beautifulsoup4
+    - run: python app.py
+    - name: Commit files
+      run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git pull origin main
+          git add rssfeed.xml
+          git commit -m "Update rss feed" || echo "No comment"
+          git push
+        
+    
