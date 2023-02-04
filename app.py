@@ -84,7 +84,7 @@ if __name__ == '__main__':
             show_synopsis = escape_string(show["synopsis"])
             show_titel = escape_string(show["title"])
             
-            with open("D:\\Projects\\ard-audiothek\\rssfeed.xml", "w", encoding='utf8') as w:
+            with open("rssfeed.xml", "w", encoding='utf8') as w:
                 w.write('<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">')
                 w.write('<channel>')
                 w.write('<title>{}</title>'.format(show_titel))
