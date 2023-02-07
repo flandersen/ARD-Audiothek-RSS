@@ -1,5 +1,7 @@
 import html
 import json
+from io import TextIOWrapper
+
 import requests
 
 URL = 'https://api.ardaudiothek.de/graphql'
@@ -65,6 +67,61 @@ def get_file_length(url):
     header = get_header(url)
     return header['content-length']
 
+def process_response_text(text:str):
+    json_obj = json.loads(text)
+    show = json_obj['data']["programSet"]
+    process_show(show)
+
+def process_show(show:dict):
+    image_url = escape_string(show["image"]["url1X1"])
+    image_url = image_url.replace("{width}", "448")
+    show_synopsis = escape_string(show["synopsis"])
+    show_titel = escape_string(show["title"])
+    
+    with open("rssfeed.xml", "w", encoding='utf8') as writer:
+        writer.write('<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">\n')
+        writer.write('    <channel>\n')
+        writer.write('        <title>{}</title>\n'.format(show_titel))
+        writer.write('        <link>{}</link>\n'.format(show['sharingUrl']))
+        writer.write('        <image>\n')
+        writer.write('            <url>{}</url>\n'.format(image_url))
+        writer.write('            <title>{}</title>\n'.format(show_titel))
+        writer.write('            <link>https://www.ardaudiothek.de{}</link>\n'.format(show["path"]))
+        writer.write('        </image>\n')
+        writer.write('        <description>{}</description>\n'.format(show_synopsis))
+
+        process_episodes(show, writer)
+
+        writer.write('    </channel>\n')
+        writer.write('</rss>\n')
+
+def process_episodes(show:dict, writer:TextIOWrapper):
+    for item in show["items"]["nodes"]:
+        process_episode(item, writer)
+
+def process_episode(item:dict, writer:TextIOWrapper):
+    if len(item['audios']) > 0:
+        audio = item['audios'][0]
+        audio_url = escape_string(audio['url'])
+        download_url = escape_string(audio['downloadUrl'])
+        duration = item['duration']
+        length = get_file_length(audio['url'])
+        publication_date = item['publicationStartDateAndTime']
+        sharing_url = escape_string(item['sharingUrl'])
+        synopsis = escape_string(item['synopsis'])
+        titel = escape_string(item['title'])
+        indent = '        '
+        writer.write('{}<item>\n'.format(indent))
+        writer.write('{}    <title>{}</title>\n'.format(indent, titel))
+        writer.write('{}    <description>{}</description>\n'.format(indent, synopsis))
+        writer.write('{}    <guid>{}</guid>\n'.format(indent, sharing_url))
+        writer.write('{}    <link>{}</link>\n'.format(indent, download_url))
+        writer.write('{}    <enclosure url="{}" length="{}" type="audio/mpeg"/>\n'.format(indent, audio_url, length))
+        writer.write('{}    <media:content url="{}" medium="audio" duration="{}" type="audio/mpeg"/>\n'.format(indent, download_url, duration))
+        writer.write('{}    <pubDate>{}</pubDate>\n'.format(indent, publication_date))
+        writer.write('{}    <itunes:duration>{}</itunes:duration>\n'.format(indent, duration))
+        writer.write('{}</item>\n'.format(indent))    
+
 
 if __name__ == '__main__':
 
@@ -77,46 +134,4 @@ if __name__ == '__main__':
 
     with requests.post(URL, json=json_data) as response:
         if response.status_code == STATUS_CODE_GOOD:
-            json_obj = json.loads(response.text)
-            show = json_obj['data']["programSet"]
-            image_url = escape_string(show["image"]["url1X1"])
-            image_url = image_url.replace("{width}", "448")
-            show_synopsis = escape_string(show["synopsis"])
-            show_titel = escape_string(show["title"])
-            
-            with open("rssfeed.xml", "w", encoding='utf8') as w:
-                w.write('<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">')
-                w.write('<channel>')
-                w.write('<title>{}</title>'.format(show_titel))
-                w.write('<link>{}</link>'.format(show['sharingUrl']))
-                w.write('<image>')
-                w.write('<url>{}</url>'.format(image_url))
-                w.write('<title>{}</title>'.format(show_titel))
-                w.write('<link>https://www.ardaudiothek.de{}</link>'.format(show["path"]))
-                w.write('</image>')
-                w.write('<description>{}</description>'.format(show_synopsis))
-
-                for item in show["items"]["nodes"]:
-                    audio = item['audios'][0]
-                    audio_url = escape_string(audio['url'])
-                    download_url = escape_string(audio['downloadUrl'])
-                    duration = item['duration']
-                    length = get_file_length(audio['url'])
-                    publication_date = item['publicationStartDateAndTime']
-                    sharing_url = escape_string(item['sharingUrl'])
-                    synopsis = escape_string(item['synopsis'])
-                    titel = escape_string(item['title'])
-                   
-                    w.write('<item>')
-                    w.write('<title>{}</title>'.format(titel))
-                    w.write('<description>{}</description>'.format(synopsis))
-                    w.write('<guid>{}</guid>'.format(sharing_url))
-                    w.write('<link>{}</link>'.format(download_url))
-                    w.write('<enclosure url="{}" length="{}" type="audio/mpeg"/>'.format(audio_url, length))
-                    w.write('<media:content url="{}" medium="audio" duration="{}" type="audio/mpeg"/>'.format(download_url, duration))
-                    w.write('<pubDate>{}</pubDate>'.format(publication_date))
-                    w.write('<itunes:duration>{}</itunes:duration>'.format(duration))
-                    w.write('</item>')
-
-                w.write('</channel>')
-                w.write('</rss>')
+            process_response_text(response.text)
