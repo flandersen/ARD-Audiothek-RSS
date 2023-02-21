@@ -13,6 +13,16 @@
 
 Ab dem 19.09.2022 werden Kalkofe und Welke immer montags i</description>
         <item>
+            <title>Pastewka, hol&#x27; schon mal den Wagen!</title>
+            <description>Kalk und Welk haben die neue Podcastfolge vor Publikum in der rbb Dachlounge aufgenommen und sich dafür einen ganz besonderen Gast eingeladen. &quot;Afterboomer&quot; Bastian Pastewka ist vorbeigekommen und hat gleich ein Potpourri alter Töne von ...</description>
+            <guid>https://www.ardaudiothek.de/episode/kalk-welk/pastewka-hol-schon-mal-den-wagen/ard/12397993/</guid>
+            <link>https://rbbmediapmdp-a.akamaihd.net/content/90/13/9013630d-beb4-4d1d-b947-652297b9fab6/0e755d80-76ec-40d8-8849-32df686022ec_a5ae55bd-856a-4ba2-b48a-bbbdfc7f22ec.mp3</link>
+            <enclosure url="https://rbbmediapmdp-a.akamaihd.net/content/90/13/9013630d-beb4-4d1d-b947-652297b9fab6/0e755d80-76ec-40d8-8849-32df686022ec_a5ae55bd-856a-4ba2-b48a-bbbdfc7f22ec.mp3" length="78311895" type="audio/mpeg"/>
+            <media:content url="https://rbbmediapmdp-a.akamaihd.net/content/90/13/9013630d-beb4-4d1d-b947-652297b9fab6/0e755d80-76ec-40d8-8849-32df686022ec_a5ae55bd-856a-4ba2-b48a-bbbdfc7f22ec.mp3" medium="audio" duration="3915" type="audio/mpeg"/>
+            <pubDate>2023-02-20T18:00:00+01:00</pubDate>
+            <itunes:duration>3915</itunes:duration>
+        </item>
+        <item>
             <title>Kalkofe-Mann &amp; Der Welkster erfinden das Rad neu!</title>
             <description>Heute werden die beiden Boomer noch von herkömmlicher Intelligenz betrieben. Aber wer weiß wie lange noch! Denn die Künstliche Intelligenz steht schon in den Startlöchern. Noch ärgern die Bots Kalk mit Beschimpfungen auf Twitter, doch vielleicht ...</description>
             <guid>https://www.ardaudiothek.de/episode/kalk-welk/kalkofe-mann-der-welkster-erfinden-das-rad-neu/ard/12378897/</guid>
@@ -101,16 +111,6 @@ Ab dem 19.09.2022 werden Kalkofe und Welke immer montags i</description>
             <media:content url="https://rbbmediapmdp-a.akamaihd.net/content/b8/c3/b8c32caf-05be-4c36-9d26-63142e8afb08/4aaa71d8-ce19-47df-9edc-63b561e41d8d_5cc35fa4-7bc8-43a4-89a7-645c397e33f7.mp3" medium="audio" duration="2779" type="audio/mpeg"/>
             <pubDate>2022-12-05T16:45:00+01:00</pubDate>
             <itunes:duration>2779</itunes:duration>
-        </item>
-        <item>
-            <title>Die drei ??? und der dämonische Pimmel</title>
-            <description>Kalk und Welk gehen nochmal alle Highlights des gestrigen WM-Spiels Deutschland-Spanien durch. Und das ist ein wahres Kunststück, denn sie haben zur Zeit der Aufzeichnung das Spiel noch gar nicht gesehen! Endlich wird auch das große Rätsel aufgeklärt, was</description>
-            <guid>https://www.ardaudiothek.de/episode/kalk-welk/die-drei-und-der-daemonische-pimmel/ard/12131015/</guid>
-            <link>https://rbbmediapmdp-a.akamaihd.net/content/1f/87/1f872a5a-d940-4b43-91bc-4c3f60de8c83/802e943c-e4c7-466e-8046-03aa9bfa6fb0_8a847711-2ede-429f-869f-9765f0e9c2ea.mp3</link>
-            <enclosure url="https://rbbmediapmdp-a.akamaihd.net/content/1f/87/1f872a5a-d940-4b43-91bc-4c3f60de8c83/802e943c-e4c7-466e-8046-03aa9bfa6fb0_8a847711-2ede-429f-869f-9765f0e9c2ea.mp3" length="72112218" type="audio/mpeg"/>
-            <media:content url="https://rbbmediapmdp-a.akamaihd.net/content/1f/87/1f872a5a-d940-4b43-91bc-4c3f60de8c83/802e943c-e4c7-466e-8046-03aa9bfa6fb0_8a847711-2ede-429f-869f-9765f0e9c2ea.mp3" medium="audio" duration="3605" type="audio/mpeg"/>
-            <pubDate>2022-11-28T17:05:00+01:00</pubDate>
-            <itunes:duration>3605</itunes:duration>
         </item>
     </channel>
 </rss>
