@@ -13,6 +13,16 @@
 
 Kalkofe und Welke sezieren in diesem Podcast jede ...</description>
         <item>
+            <title>Diese Folge ist nur geträumt</title>
+            <description>Warnung: Diese Folge wird schön nerdig! Nachdem die beiden Ollis vor kurzem schon über den Denver Clan geredet haben, geht es heute um die Familienserie Nummer 1: Dallas. Aber auch um andere Familienserien aus den USA und aus Deutschland. Schaurig ...</description>
+            <guid>https://www.ardaudiothek.de/episode/kalk-welk/diese-folge-ist-nur-getraeumt/ard/12732643/</guid>
+            <link>https://rbbmediapmdp-a.akamaihd.net/content/f4/da/f4da5e90-b908-4ba0-b3ce-2274f7fd610c/f44a43b3-1e6c-400e-aad2-36991173fc41_11d5a9db-bdb3-40ba-8bdd-0e45b135f97c.mp3</link>
+            <enclosure url="https://rbbmediapmdp-a.akamaihd.net/content/f4/da/f4da5e90-b908-4ba0-b3ce-2274f7fd610c/f44a43b3-1e6c-400e-aad2-36991173fc41_11d5a9db-bdb3-40ba-8bdd-0e45b135f97c.mp3" length="63656528" type="audio/mpeg"/>
+            <media:content url="https://rbbmediapmdp-a.akamaihd.net/content/f4/da/f4da5e90-b908-4ba0-b3ce-2274f7fd610c/f44a43b3-1e6c-400e-aad2-36991173fc41_11d5a9db-bdb3-40ba-8bdd-0e45b135f97c.mp3" medium="audio" duration="3183" type="audio/mpeg"/>
+            <pubDate>2023-06-05T17:30:00+02:00</pubDate>
+            <itunes:duration>3183</itunes:duration>
+        </item>
+        <item>
             <title>Kalk und Welk lassen ohne Not Punkte liegen</title>
             <description>Am Pfingstmontag herrscht Katerstimmung bei den beiden Ollis: Dortmund ist nicht Meister geworden und Welks ehemaliger Moderationspartner Oliver Kahn wurde von der Bayernfamilie verstoßen. Der einzige der noch Bock auf Fußball hat, ist Kalk, denn der ...</description>
             <guid>https://www.ardaudiothek.de/episode/kalk-welk/kalk-und-welk-lassen-ohne-not-punkte-liegen/ard/12713883/</guid>
@@ -101,16 +111,6 @@ Kalkofe und Welke sezieren in diesem Podcast jede ...</description>
             <media:content url="https://rbbmediapmdp-a.akamaihd.net/content/09/84/0984517f-7765-4a9e-a3c9-288469acc07e/d74f072b-f969-4e78-a265-5da96b9657dd_6e2ac268-60c7-44e9-8a2c-f751207131cd.mp3" medium="audio" duration="2892" type="audio/mpeg"/>
             <pubDate>2023-04-03T18:00:00+02:00</pubDate>
             <itunes:duration>2892</itunes:duration>
-        </item>
-        <item>
-            <title>Happy Birthday, ZDF! Kalk &amp; Welk können nicht ploppen</title>
-            <description>Eine Woche voller Höhepunkte steht bevor. Die Boomer Boys glühen verbal schon einmal vor und freuen sich auf den Besuch von König Charles in Deutschland, ein Mann, der stets mit gebügelten Schnürsenkeln unterwegs ist. Und das Zweite Deutsche ...</description>
-            <guid>https://www.ardaudiothek.de/episode/kalk-welk/happy-birthday-zdf-kalk-welk-koennen-nicht-ploppen/ard/12525571/</guid>
-            <link>https://rbbmediapmdp-a.akamaihd.net/content/08/27/082782de-9ae7-4c9e-a4d9-94af15e87da6/1b2d7fa8-9bc2-4e52-bda6-05ef775aa3f8_abae9cac-3953-4325-8b74-e31e4bbffcbb.mp3</link>
-            <enclosure url="https://rbbmediapmdp-a.akamaihd.net/content/08/27/082782de-9ae7-4c9e-a4d9-94af15e87da6/1b2d7fa8-9bc2-4e52-bda6-05ef775aa3f8_abae9cac-3953-4325-8b74-e31e4bbffcbb.mp3" length="62249193" type="audio/mpeg"/>
-            <media:content url="https://rbbmediapmdp-a.akamaihd.net/content/08/27/082782de-9ae7-4c9e-a4d9-94af15e87da6/1b2d7fa8-9bc2-4e52-bda6-05ef775aa3f8_abae9cac-3953-4325-8b74-e31e4bbffcbb.mp3" medium="audio" duration="3112" type="audio/mpeg"/>
-            <pubDate>2023-03-27T17:00:00+02:00</pubDate>
-            <itunes:duration>3112</itunes:duration>
         </item>
     </channel>
 </rss>
