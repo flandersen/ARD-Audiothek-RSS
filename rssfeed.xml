@@ -13,6 +13,16 @@
 
 Kalkofe und Welke sezieren in diesem Podcast jede ...</description>
         <item>
+            <title>Mit der Lizenz zum Nerden</title>
+            <description>Heute sind Kalk und Welk geschüttelt, nicht gerührt. Denn die Ollis widmen sich dem berühmtesten Spion der Filmgeschichte: Bond. James Bond. Sie philosophieren darüber, was an Bond noch funktioniert, was eher nicht und warum diese Filmserie trotz ...</description>
+            <guid>https://www.ardaudiothek.de/episode/kalk-welk/mit-der-lizenz-zum-nerden/ard/94552074/</guid>
+            <link>https://rbbmediapmdp-a.akamaihd.net/content/3e/35/3e35c1b5-f53b-46b0-abe8-ce0d1d4861d1/890fba94-7aa1-41e4-93e8-7eab089eaae4_cb184d1d-a042-4857-a436-066952f71105.mp3</link>
+            <enclosure url="https://rbbmediapmdp-a.akamaihd.net/content/3e/35/3e35c1b5-f53b-46b0-abe8-ce0d1d4861d1/890fba94-7aa1-41e4-93e8-7eab089eaae4_cb184d1d-a042-4857-a436-066952f71105.mp3" length="70571885" type="audio/mpeg"/>
+            <media:content url="https://rbbmediapmdp-a.akamaihd.net/content/3e/35/3e35c1b5-f53b-46b0-abe8-ce0d1d4861d1/890fba94-7aa1-41e4-93e8-7eab089eaae4_cb184d1d-a042-4857-a436-066952f71105.mp3" medium="audio" duration="3528" type="audio/mpeg"/>
+            <pubDate>2023-06-26T17:30:00+02:00</pubDate>
+            <itunes:duration>3528</itunes:duration>
+        </item>
+        <item>
             <title>Durchgeschwitzt mit Krötenhandschuhen durch die Nacht</title>
             <description>Vorfreude ist die schönste Freude. Das wissen auch die beiden Ollis, die in dieser Folge verraten, wie sie sich den Sommer und die nahende Podcast-Sommerpause versüßen. Während Kalk an seinem Vampir-Lifestyle festhält, will Welk vor allem im Meer ...</description>
             <guid>https://www.ardaudiothek.de/episode/kalk-welk/durchgeschwitzt-mit-kroetenhandschuhen-durch-die-nacht/ard/94529730/</guid>
@@ -101,16 +111,6 @@ Kalkofe und Welke sezieren in diesem Podcast jede ...</description>
             <media:content url="https://rbbmediapmdp-a.akamaihd.net/content/d4/c4/d4c477be-317b-4534-b735-981c5a3e7824/956092e4-46bb-4ccb-9f33-3e5e36225168_70e2930b-61b6-445f-b3db-877790b0da2d.mp3" medium="audio" duration="3118" type="audio/mpeg"/>
             <pubDate>2023-04-24T17:00:00+02:00</pubDate>
             <itunes:duration>3118</itunes:duration>
-        </item>
-        <item>
-            <title>Kalk &amp; Welk lachen sich besorgt kaputt!</title>
-            <description>Diese Folge wird in die Geschichte eingehen, denn es ist die erste, die die Boomer Boys ohne Atomstrom made in Germany bewerkstelligen müssen. Dennoch stoßen Kalk und Welk weiterhin auf so manch verstrahlte Typen wie den AKW-Fan aus Bayern, Markus ...</description>
-            <guid>https://www.ardaudiothek.de/episode/kalk-welk/kalk-welk-lachen-sich-besorgt-kaputt/ard/12597507/</guid>
-            <link>https://rbbmediapmdp-a.akamaihd.net/content/ff/3f/ff3f41f4-dde5-43a0-a1de-83fbaf0080cf/53334183-8050-4d93-a7b0-b6bc9c6e7b5b_e3b4a891-c73a-43ec-b3db-a280aeab2fe7.mp3</link>
-            <enclosure url="https://rbbmediapmdp-a.akamaihd.net/content/ff/3f/ff3f41f4-dde5-43a0-a1de-83fbaf0080cf/53334183-8050-4d93-a7b0-b6bc9c6e7b5b_e3b4a891-c73a-43ec-b3db-a280aeab2fe7.mp3" length="64959259" type="audio/mpeg"/>
-            <media:content url="https://rbbmediapmdp-a.akamaihd.net/content/ff/3f/ff3f41f4-dde5-43a0-a1de-83fbaf0080cf/53334183-8050-4d93-a7b0-b6bc9c6e7b5b_e3b4a891-c73a-43ec-b3db-a280aeab2fe7.mp3" medium="audio" duration="3248" type="audio/mpeg"/>
-            <pubDate>2023-04-17T17:27:00+02:00</pubDate>
-            <itunes:duration>3248</itunes:duration>
         </item>
     </channel>
 </rss>
